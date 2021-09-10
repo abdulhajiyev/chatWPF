@@ -1,0 +1,33 @@
+﻿<UserControl
+    x:Class="chatWPF.ChatBubbleSent"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+    <Grid>
+        <Border
+            Margin="10,12"
+            HorizontalAlignment="Right"
+            Background="#375FFF"
+            CornerRadius="15,15,0,15">
+            <TextBlock
+                Margin="15"
+                HorizontalAlignment="Right"
+                Foreground="White"
+                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut porttitor leo a diam sollicitudin tempor. Integer vitae justo eget magna. Vel risus commodo viverra maecenas accumsan lacus vel. Sagittis nisl rhoncus mattis rhoncus urna neque. Odio facilisis mauris sit amet massa. Turpis tincidunt id aliquet risus. Dis parturient montes nascetur ridiculus mus mauris vitae. Viverra aliquet eget sit amet. Maecenas ultricies mi eget mauris. Sagittis nisl rhoncus mattis rhoncus urna neque. Venenatis tellus in metus vulputate eu scelerisque. Porttitor eget dolor morbi non arcu risus quis. Auctor elit sed vulputate mi sit. Dui vivamus arcu felis bibendum ut tristique et egestas quis."
+                TextWrapping="Wrap" />
+        </Border>
+        <TextBlock
+            Margin="10,0,10,0"
+            Padding="0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            FontSize="10"
+            Foreground="White"
+            ScrollViewer.CanContentScroll="True"
+            Text="Thu 5:45PM" />
+    </Grid>
+</UserControl>
