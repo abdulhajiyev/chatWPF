@@ -27,6 +27,7 @@
             Margin="10,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Bottom"
+
             FontSize="10"
             Foreground="White"
             Text="Thu 5:45PM" />

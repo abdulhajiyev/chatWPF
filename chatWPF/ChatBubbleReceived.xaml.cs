@@ -6,7 +6,7 @@ namespace chatWPF
     /// <summary>
     /// Interaction logic for ChatBubbleReceived.xaml
     /// </summary>
-    public partial class ChatBubbleReceived : UserControl
+    public partial class ChatBubbleReceived
     {
         public ChatBubbleReceived()
         {

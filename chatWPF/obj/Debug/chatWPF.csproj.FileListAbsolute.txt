@@ -24,4 +24,5 @@ C:\Users\Raider\source\repos\chatWPF\chatWPF\obj\Debug\ChatBubbleReceived.g.cs
 C:\Users\Raider\source\repos\chatWPF\chatWPF\obj\Debug\ChatBubbleSent.g.cs
 C:\Users\Raider\source\repos\chatWPF\chatWPF\obj\Debug\chatWPF_MarkupCompile.lref
 C:\Users\Raider\source\repos\chatWPF\chatWPF\obj\Debug\ChatBubbleReceived.baml
-C:\Users\Raider\source\repos\chatWPF\chatWPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Raider\source\repos\chatWPF\chatWPF\bin\Debug\FluentWPF.dll
+C:\Users\Raider\source\repos\chatWPF\chatWPF\obj\Debug\App.baml
