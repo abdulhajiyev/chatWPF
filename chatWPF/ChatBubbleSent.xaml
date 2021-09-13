@@ -14,6 +14,7 @@
             Background="#375FFF"
             CornerRadius="15,15,0,15">
             <TextBlock
+                Name="TextBlockSent"
                 Margin="15"
                 HorizontalAlignment="Right"
                 Foreground="White"
