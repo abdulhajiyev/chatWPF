@@ -15,6 +15,7 @@
             Background="#0F1828"
             CornerRadius="15,15,15,0">
             <TextBlock
+                Name="ReceivedText"
                 Margin="15"
                 HorizontalAlignment="Left"
                 Foreground="White"
@@ -22,6 +23,7 @@
                 TextWrapping="Wrap" />
         </Border>
         <TextBlock
+            Name="TimeReceived"
             Margin="10,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Bottom"

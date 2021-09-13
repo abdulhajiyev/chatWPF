@@ -18,10 +18,11 @@
                 Margin="15"
                 HorizontalAlignment="Right"
                 Foreground="White"
-                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut porttitor leo a diam sollicitudin tempor. Integer vitae justo eget magna. Vel risus commodo viverra maecenas accumsan lacus vel. Sagittis nisl rhoncus mattis rhoncus urna neque. Odio facilisis mauris sit amet massa. Turpis tincidunt id aliquet risus. Dis parturient montes nascetur ridiculus mus mauris vitae. Viverra aliquet eget sit amet. Maecenas ultricies mi eget mauris. Sagittis nisl rhoncus mattis rhoncus urna neque. Venenatis tellus in metus vulputate eu scelerisque. Porttitor eget dolor morbi non arcu risus quis. Auctor elit sed vulputate mi sit. Dui vivamus arcu felis bibendum ut tristique et egestas quis."
+                Text="Lorem ipLorem ipLorem ipLorem ipLorem ipLorem ipLorem ipLorem ip."
                 TextWrapping="Wrap" />
         </Border>
         <TextBlock
+            Name="TimeSent"
             Margin="10,0,10,0"
             Padding="0"
             HorizontalAlignment="Right"

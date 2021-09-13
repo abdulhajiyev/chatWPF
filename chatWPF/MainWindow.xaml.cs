@@ -1,4 +1,6 @@
-﻿using System.Windows;
+﻿using System.Threading;
+using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
 
 namespace chatWPF
@@ -21,24 +23,39 @@ namespace chatWPF
             Close();
         }
 
-        private void UIElement_OnKeyDown(object sender, KeyEventArgs e)
-        {
-            if (TextBox.Text.Length > 0)
-            {
-                ChatBubbleSent.TextBlockSent.Text = TextBox.Text;
-                ListBox.Items.Add(new ChatBubbleSent());
-            }
-        }
-
         private void Send_OnMouseDown(object sender, MouseButtonEventArgs e)
         {
+            
             if (TextBox.Text.Length > 0)
             {
                 //ChatBubbleSent.TextBlockSent.Text = TextBox.Text;
                 ChatBubbleSent cbs = new ChatBubbleSent();
+                
                 cbs.TextBlockSent.Text = TextBox.Text;
                 ListBox.Items.Add(cbs);
+                string temp = TextBox.Text;
+                TextBox.Text = string.Empty;
+                
+                Task.Run(() =>
+                {
+                    Thread.Sleep(500);
+
+
+                    Application.Current.Dispatcher.Invoke(() =>
+                    {
+
+                        ChatBubbleReceived cbr = new ChatBubbleReceived();
+                        cbr.ReceivedText.Text = temp;
+                        ListBox.Items.Add(cbr);
+                        ListBox.Items.MoveCurrentToLast();
+                        ListBox.ScrollIntoView(ListBox.Items.CurrentItem);
+                    });
+                });
+                ListBox.Items.MoveCurrentToLast();
+                ListBox.ScrollIntoView(ListBox.Items.CurrentItem);
             }
+
+
         }
 
         private void MouseLeft_OnDown(object sender, MouseButtonEventArgs e)
